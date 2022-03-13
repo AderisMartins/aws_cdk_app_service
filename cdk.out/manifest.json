@@ -1,0 +1,559 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "Vpc": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Vpc.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/Vpc/Vpc1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1C211860B",
+            "trace": [
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:399:25)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet1SubnetA38B5196",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:731:24)",
+              "new PublicSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:891:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:641:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet1RouteTable7CD3463B",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:747:23)",
+              "new PublicSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:891:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:641:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet1RouteTableAssociation0DA89392",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:752:9)",
+              "new PublicSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:891:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:641:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet1DefaultRouteD017B509",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:780:23)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:437:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:436:32)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet1EIP2A0C9397",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:907:102)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:91:33)",
+              "Vpc.createNatGateways (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:589:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:442:22)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet1NATGatewayD379451C",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:905:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:91:33)",
+              "Vpc.createNatGateways (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:589:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:442:22)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet2Subnet9A232F02",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:731:24)",
+              "new PublicSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:891:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:641:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet2RouteTable845CC89F",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:747:23)",
+              "new PublicSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:891:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:641:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet2RouteTableAssociationC2021359",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:752:9)",
+              "new PublicSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:891:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:641:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet2DefaultRoute1057C1D6",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:780:23)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:437:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:436:32)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet2EIPB84B774D",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:907:102)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:91:33)",
+              "Vpc.createNatGateways (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:589:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:442:22)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PublicSubnet2NATGateway3CC07DBE",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:905:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:91:33)",
+              "Vpc.createNatGateways (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:589:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:442:22)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PrivateSubnet1Subnet50D09F89",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:731:24)",
+              "new PrivateSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:922:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:646:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PrivateSubnet1RouteTableA2A98BA2",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:747:23)",
+              "new PrivateSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:922:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:646:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PrivateSubnet1RouteTableAssociation34CB3D68",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:752:9)",
+              "new PrivateSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:922:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:646:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PrivateSubnet1DefaultRoute3E3E8605",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:822:23)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:103:16)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:97:18)",
+              "Vpc.createNatGateways (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:589:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:442:22)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PrivateSubnet2SubnetC8234376",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:731:24)",
+              "new PrivateSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:922:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:646:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PrivateSubnet2RouteTableE3924F59",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:747:23)",
+              "new PrivateSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:922:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:646:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PrivateSubnet2RouteTableAssociation0AC0FF72",
+            "trace": [
+              "new Subnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:752:9)",
+              "new PrivateSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:922:9)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:646:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:615:32)",
+              "Vpc.createSubnets (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:611:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:425:14)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1PrivateSubnet2DefaultRouteFC412A17",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:822:23)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:103:16)",
+              "NatGatewayProvider.configureNat (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:97:18)",
+              "Vpc.createNatGateways (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:589:18)",
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:442:22)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1IGW15AE5E6B",
+            "trace": [
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:429:25)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/Vpc1/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc1VPCGW4C1BD07A",
+            "trace": [
+              "new Vpc (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:432:25)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "Kernel._create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8412:34)",
+              "Kernel.create (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8153:29)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\stage.js:89:41)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8228:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8228:107",
+              "Kernel._ensureSync (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8821:28)",
+              "Kernel.invoke (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8228:34)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/Vpc/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-kernel-z4or0L\\node_modules\\@aws-cdk\\core\\lib\\stage.js:89:41)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8228:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8840:24)",
+              "C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8228:107",
+              "Kernel._ensureSync (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8821:28)",
+              "Kernel.invoke (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:8228:34)",
+              "KernelHost.processRequest (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\Martins\\AppData\\Local\\Temp\\jsii-java-runtime6887400084184724696\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Vpc"
+    }
+  }
+}
