@@ -102,44 +102,6 @@
         "aws:cdk:path": "Vpc/Vpc1/PublicSubnet1/DefaultRoute"
       }
     },
-    "Vpc1PublicSubnet1EIP2A0C9397": {
-      "Type": "AWS::EC2::EIP",
-      "Properties": {
-        "Domain": "vpc",
-        "Tags": [
-          {
-            "Key": "Name",
-            "Value": "Vpc/Vpc1/PublicSubnet1"
-          }
-        ]
-      },
-      "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PublicSubnet1/EIP"
-      }
-    },
-    "Vpc1PublicSubnet1NATGatewayD379451C": {
-      "Type": "AWS::EC2::NatGateway",
-      "Properties": {
-        "SubnetId": {
-          "Ref": "Vpc1PublicSubnet1SubnetA38B5196"
-        },
-        "AllocationId": {
-          "Fn::GetAtt": [
-            "Vpc1PublicSubnet1EIP2A0C9397",
-            "AllocationId"
-          ]
-        },
-        "Tags": [
-          {
-            "Key": "Name",
-            "Value": "Vpc/Vpc1/PublicSubnet1"
-          }
-        ]
-      },
-      "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PublicSubnet1/NATGateway"
-      }
-    },
     "Vpc1PublicSubnet2Subnet9A232F02": {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
@@ -224,45 +186,7 @@
         "aws:cdk:path": "Vpc/Vpc1/PublicSubnet2/DefaultRoute"
       }
     },
-    "Vpc1PublicSubnet2EIPB84B774D": {
-      "Type": "AWS::EC2::EIP",
-      "Properties": {
-        "Domain": "vpc",
-        "Tags": [
-          {
-            "Key": "Name",
-            "Value": "Vpc/Vpc1/PublicSubnet2"
-          }
-        ]
-      },
-      "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PublicSubnet2/EIP"
-      }
-    },
-    "Vpc1PublicSubnet2NATGateway3CC07DBE": {
-      "Type": "AWS::EC2::NatGateway",
-      "Properties": {
-        "SubnetId": {
-          "Ref": "Vpc1PublicSubnet2Subnet9A232F02"
-        },
-        "AllocationId": {
-          "Fn::GetAtt": [
-            "Vpc1PublicSubnet2EIPB84B774D",
-            "AllocationId"
-          ]
-        },
-        "Tags": [
-          {
-            "Key": "Name",
-            "Value": "Vpc/Vpc1/PublicSubnet2"
-          }
-        ]
-      },
-      "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PublicSubnet2/NATGateway"
-      }
-    },
-    "Vpc1PrivateSubnet1Subnet50D09F89": {
+    "Vpc1IsolatedSubnet1Subnet41898916": {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "10.0.128.0/18",
@@ -281,23 +205,23 @@
         "Tags": [
           {
             "Key": "aws-cdk:subnet-name",
-            "Value": "Private"
+            "Value": "Isolated"
           },
           {
             "Key": "aws-cdk:subnet-type",
-            "Value": "Private"
+            "Value": "Isolated"
           },
           {
             "Key": "Name",
-            "Value": "Vpc/Vpc1/PrivateSubnet1"
+            "Value": "Vpc/Vpc1/IsolatedSubnet1"
           }
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PrivateSubnet1/Subnet"
+        "aws:cdk:path": "Vpc/Vpc1/IsolatedSubnet1/Subnet"
       }
     },
-    "Vpc1PrivateSubnet1RouteTableA2A98BA2": {
+    "Vpc1IsolatedSubnet1RouteTable85CC0284": {
       "Type": "AWS::EC2::RouteTable",
       "Properties": {
         "VpcId": {
@@ -306,44 +230,29 @@
         "Tags": [
           {
             "Key": "Name",
-            "Value": "Vpc/Vpc1/PrivateSubnet1"
+            "Value": "Vpc/Vpc1/IsolatedSubnet1"
           }
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PrivateSubnet1/RouteTable"
+        "aws:cdk:path": "Vpc/Vpc1/IsolatedSubnet1/RouteTable"
       }
     },
-    "Vpc1PrivateSubnet1RouteTableAssociation34CB3D68": {
+    "Vpc1IsolatedSubnet1RouteTableAssociation5CB6A296": {
       "Type": "AWS::EC2::SubnetRouteTableAssociation",
       "Properties": {
         "RouteTableId": {
-          "Ref": "Vpc1PrivateSubnet1RouteTableA2A98BA2"
+          "Ref": "Vpc1IsolatedSubnet1RouteTable85CC0284"
         },
         "SubnetId": {
-          "Ref": "Vpc1PrivateSubnet1Subnet50D09F89"
+          "Ref": "Vpc1IsolatedSubnet1Subnet41898916"
         }
       },
       "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PrivateSubnet1/RouteTableAssociation"
+        "aws:cdk:path": "Vpc/Vpc1/IsolatedSubnet1/RouteTableAssociation"
       }
     },
-    "Vpc1PrivateSubnet1DefaultRoute3E3E8605": {
-      "Type": "AWS::EC2::Route",
-      "Properties": {
-        "RouteTableId": {
-          "Ref": "Vpc1PrivateSubnet1RouteTableA2A98BA2"
-        },
-        "DestinationCidrBlock": "0.0.0.0/0",
-        "NatGatewayId": {
-          "Ref": "Vpc1PublicSubnet1NATGatewayD379451C"
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PrivateSubnet1/DefaultRoute"
-      }
-    },
-    "Vpc1PrivateSubnet2SubnetC8234376": {
+    "Vpc1IsolatedSubnet2SubnetE973B126": {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "10.0.192.0/18",
@@ -362,23 +271,23 @@
         "Tags": [
           {
             "Key": "aws-cdk:subnet-name",
-            "Value": "Private"
+            "Value": "Isolated"
           },
           {
             "Key": "aws-cdk:subnet-type",
-            "Value": "Private"
+            "Value": "Isolated"
           },
           {
             "Key": "Name",
-            "Value": "Vpc/Vpc1/PrivateSubnet2"
+            "Value": "Vpc/Vpc1/IsolatedSubnet2"
           }
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PrivateSubnet2/Subnet"
+        "aws:cdk:path": "Vpc/Vpc1/IsolatedSubnet2/Subnet"
       }
     },
-    "Vpc1PrivateSubnet2RouteTableE3924F59": {
+    "Vpc1IsolatedSubnet2RouteTable43B12B6D": {
       "Type": "AWS::EC2::RouteTable",
       "Properties": {
         "VpcId": {
@@ -387,41 +296,26 @@
         "Tags": [
           {
             "Key": "Name",
-            "Value": "Vpc/Vpc1/PrivateSubnet2"
+            "Value": "Vpc/Vpc1/IsolatedSubnet2"
           }
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PrivateSubnet2/RouteTable"
+        "aws:cdk:path": "Vpc/Vpc1/IsolatedSubnet2/RouteTable"
       }
     },
-    "Vpc1PrivateSubnet2RouteTableAssociation0AC0FF72": {
+    "Vpc1IsolatedSubnet2RouteTableAssociation6394B926": {
       "Type": "AWS::EC2::SubnetRouteTableAssociation",
       "Properties": {
         "RouteTableId": {
-          "Ref": "Vpc1PrivateSubnet2RouteTableE3924F59"
+          "Ref": "Vpc1IsolatedSubnet2RouteTable43B12B6D"
         },
         "SubnetId": {
-          "Ref": "Vpc1PrivateSubnet2SubnetC8234376"
+          "Ref": "Vpc1IsolatedSubnet2SubnetE973B126"
         }
       },
       "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PrivateSubnet2/RouteTableAssociation"
-      }
-    },
-    "Vpc1PrivateSubnet2DefaultRouteFC412A17": {
-      "Type": "AWS::EC2::Route",
-      "Properties": {
-        "RouteTableId": {
-          "Ref": "Vpc1PrivateSubnet2RouteTableE3924F59"
-        },
-        "DestinationCidrBlock": "0.0.0.0/0",
-        "NatGatewayId": {
-          "Ref": "Vpc1PublicSubnet2NATGateway3CC07DBE"
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "Vpc/Vpc1/PrivateSubnet2/DefaultRoute"
+        "aws:cdk:path": "Vpc/Vpc1/IsolatedSubnet2/RouteTableAssociation"
       }
     },
     "Vpc1IGW15AE5E6B": {
@@ -455,7 +349,7 @@
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAA/0VPuw7CMAz8FvYQaGFgBFUIlQFVBbEi1xgRHglKHBCq+u8kvDLd+e58sjOZjSdy2JvCw/Vxfx60aCzJds2AZ1GTM94iicJox9Yji+Kgk3rQwdgrVkZ3IjYQ5rLd3jBa26oQlW8uCte+0fReTaw2nmkDzYWSnrSZcwYVxOJ/OJJ5WUVYAS+A6QFPUVl1DzQVl5rJBv4LfC75TjMOfx2vpLnrxBLuMMhkeH83yvPeySnVt16zupKsP/gC+M/RlR8BAAA="
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/0WPQQ+CMAyFfwv3MQU9eJRwMHoiaLyaUUqc4Ga2DmII/92hxJ36+r32NU14st3xdbQXg42hblcjaIN8PJOAlpVotTOALNfKknFALG9UoI3yRi1JajWxOQEh5eP1BbN1LXJWuKqTcHaVwu9qUKV2hBdRdRh4YJm1GqSYg//DrDCyF4Qh46gIjdcHTwfxXo4uXUb+hfsTFU0TO4lerBLuP71t0jR6WClj4xTJJ/LyVz+P3NKdCgEAAA=="
       },
       "Metadata": {
         "aws:cdk:path": "Vpc/CDKMetadata/Default"
@@ -655,6 +549,32 @@
           ]
         }
       ]
+    }
+  },
+  "Outputs": {
+    "ExportsOutputRefVpc1PublicSubnet1SubnetA38B51968C40ECD8": {
+      "Value": {
+        "Ref": "Vpc1PublicSubnet1SubnetA38B5196"
+      },
+      "Export": {
+        "Name": "Vpc:ExportsOutputRefVpc1PublicSubnet1SubnetA38B51968C40ECD8"
+      }
+    },
+    "ExportsOutputRefVpc1PublicSubnet2Subnet9A232F02CD3AED0E": {
+      "Value": {
+        "Ref": "Vpc1PublicSubnet2Subnet9A232F02"
+      },
+      "Export": {
+        "Name": "Vpc:ExportsOutputRefVpc1PublicSubnet2Subnet9A232F02CD3AED0E"
+      }
+    },
+    "ExportsOutputRefVpc1C211860B64169B74": {
+      "Value": {
+        "Ref": "Vpc1C211860B"
+      },
+      "Export": {
+        "Name": "Vpc:ExportsOutputRefVpc1C211860B64169B74"
+      }
     }
   }
 }

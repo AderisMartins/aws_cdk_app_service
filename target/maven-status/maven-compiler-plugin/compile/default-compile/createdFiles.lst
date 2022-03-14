@@ -1,3 +1,5 @@
-com\myorg\AwsCdkAppServiceStack.class
+com\myorg\ClusterStk.class
+com\myorg\Service01Stk.class
+com\myorg\AwsCdkAppServiceStk.class
 com\myorg\AwsCdkAppServiceApp.class
 com\myorg\VpcStk.class
